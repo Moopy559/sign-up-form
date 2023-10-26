@@ -46,6 +46,8 @@ body {
     max-width: 50vw;
 }
 
+
+
 .input-fields {
     display: flex
 }
@@ -74,3 +76,13 @@ input:focus {
 input:invalid {
     border-color: red;
 }
+
+button {
+    color: white;
+    background-color: rgb(7, 17, 37);
+    border-radius: 8px;
+    border: none;
+    width: 200px;
+    height: 40px;
+    font-weight: 600;
+    margin-top:50px;
