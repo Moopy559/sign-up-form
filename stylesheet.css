@@ -39,8 +39,38 @@ body {
   align-self: center;
 }
 
+/* MAIN CONTENT BODY TEXT */
 .main-content > div > div {
    font-size: 20pt;
     font-weight: 600;
     max-width: 50vw;
+}
+
+.input-fields {
+    display: flex
+}
+
+.input-fields div:nth-child(2) {
+    padding-left: 80px;
+}
+
+label {
+    font-size: .7rem;
+    font-weight: 600;
+
+}
+
+input {
+    border: rgb(201, 200, 200) solid 1px;
+    border-radius: 3px;
+    width: 220px;
+    height: 20px;
+}
+
+input:focus {
+    border-color: #ff0000;
+  }
+
+input:invalid {
+    border-color: red;
 }
