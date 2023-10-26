@@ -33,3 +33,14 @@ body {
   display: flex;
   padding-left: 50px;
 }
+
+.main-content > div {
+  justify-content: center;
+  align-self: center;
+}
+
+.main-content > div > div {
+   font-size: 20pt;
+    font-weight: 600;
+    max-width: 50vw;
+}
