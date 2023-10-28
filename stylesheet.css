@@ -73,12 +73,15 @@ input {
 }
 
 input:focus {
-    border-color: #ff0000;
+    outline: rgb(51, 105, 255) solid 1px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.432);
   }
 
 input:invalid {
     border-color: red;
 }
+
+
 
 button {
     color: white;
