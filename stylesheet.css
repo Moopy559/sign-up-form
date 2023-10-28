@@ -48,13 +48,16 @@ body {
 
 
 
-.input-fields {
-    display: flex
+
+.input-fields > div {
+  display: flex;
+  margin-bottom: 10px;
 }
 
-.input-fields div:nth-child(2) {
-    padding-left: 80px;
+.col2 {
+  margin-left: 40px;
 }
+
 
 label {
     font-size: .7rem;
