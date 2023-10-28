@@ -38,6 +38,10 @@ body {
   padding-left: 50px;
 }
 
+.hide {
+  display: none;
+}
+
 .main-content > div {
   justify-content: center;
   align-self: center;

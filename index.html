@@ -85,6 +85,18 @@
                 </div>
               </div>
             </div>
+            <p
+              id="error"
+              class="hide"
+              style="
+                color: red;
+                font-size: 0.8rem;
+                margin-top: -10px;
+                position: absolute;
+              "
+            >
+              * Passwords do not match
+            </p>
           </div>
           <div class="padding"><button>Create Account</button></div>
         </form>
@@ -92,4 +104,20 @@
       </div>
     </div>
   </body>
+  <script>
+    let userPass = document.querySelector("#user-pass");
+    let userConfirm = document.querySelector("#user-confirm");
+    let error = document.querySelector("#error");
+
+    function validatePassword() {
+      if (userPass.value == userConfirm.value) {
+        error.classList.add("hide");
+      } else {
+        error.classList.remove("hide");
+      }
+    }
+
+    userPass.addEventListener("input", validatePassword);
+    userConfirm.addEventListener("input", validatePassword);
+  </script>
 </html>
