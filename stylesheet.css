@@ -3,6 +3,7 @@ body {
   font-family: "Titillium Web", sans-serif;
   margin: 0;
   display: flex;
+  background-color: rgb(249, 250, 255);
 }
 
 .stripe {
@@ -31,6 +32,9 @@ body {
 .main-content {
   height: 100vh;
   display: flex;
+}
+
+.padding {
   padding-left: 50px;
 }
 
@@ -41,13 +45,18 @@ body {
 
 /* MAIN CONTENT BODY TEXT */
 .main-content > div > div {
-   font-size: 20pt;
-    font-weight: 600;
-    max-width: 50vw;
+  font-size: 20pt;
+  font-weight: 600;
+  padding-bottom: 20px;
 }
 
-
-
+.form-bar {
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.137);
+  padding-bottom: 30px;
+  padding-top: 5px;
+  width: 100vw;
+}
 
 .input-fields > div {
   display: flex;
@@ -58,37 +67,39 @@ body {
   margin-left: 40px;
 }
 
-
 label {
-    font-size: .7rem;
-    font-weight: 600;
-
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 
 input {
-    border: rgb(201, 200, 200) solid 1px;
-    border-radius: 3px;
-    width: 220px;
-    height: 20px;
+  border: rgb(201, 200, 200) solid 1px;
+  border-radius: 3px;
+  width: 220px;
+  height: 20px;
 }
 
 input:focus {
-    outline: rgb(51, 105, 255) solid 1px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.432);
-  }
-
-input:invalid {
-    border-color: red;
+  outline: rgb(51, 105, 255) solid 1px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.432);
 }
 
-
+input:invalid {
+  border-color: red;
+}
 
 button {
-    color: white;
-    background-color: rgb(7, 17, 37);
-    border-radius: 8px;
-    border: none;
-    width: 200px;
-    height: 40px;
-    font-weight: 600;
-    margin-top:50px;
+  color: white;
+  background-color: rgb(7, 17, 37);
+  border-radius: 8px;
+  border: none;
+  width: 200px;
+  height: 40px;
+  font-weight: 600;
+  margin-top: 50px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.432);
+}
+
+button:hover {
+  background-color: rgb(9, 37, 94);
+}
